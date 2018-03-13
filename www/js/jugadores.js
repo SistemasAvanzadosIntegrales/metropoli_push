@@ -6,6 +6,7 @@
  * @version:  1
  * @descripcion:
  **/
+/*
 function crear_nickname(jugador) {
     
 	if( $("#nombre"+jugador).val() !== "" && 
@@ -15,6 +16,7 @@ function crear_nickname(jugador) {
         $( "#nickname"+jugador ).val( $("#nombre"+jugador).val().substr(0, 1) + $( "#apellido_paterno"+jugador ).val().substr(0,2));
 	}
 }
+*/
 
 /**
  * @author:   Andrea Luna
@@ -59,6 +61,7 @@ function crearRegistro() {
  * @version:  1
  * @descripcion: 
  **/
+/*
 function iniciarJuego() {
 	
     $('#alerta').hide();
@@ -207,3 +210,4 @@ function iniciarJuego() {
         }
     }
 }
+*/
