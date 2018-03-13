@@ -183,14 +183,13 @@ function compartirTwitter(){
 	
     var jugadores = JSON.parse(localStorage.getItem('jugadores')); 
     var ganadores_partida = JSON.parse(localStorage.getItem('puntajeGanadores'));
-    var cadena = '¡Nosotros jugamos en Metropóli Golf Center! \n\n------ Resultados: ------\n\n';
+    var cadena = '¡Jugamos en Metrópoli Golf Center! \n\n';
 
-    for(var i = 0; i < jugadores.length ; i++){
-        cadena += '- '+ganadores_partida[i]['nombre']+'\n';
-        cadena += 'Total de tiros: '+ganadores_partida[i]['total']+'\n';
+    for(var i = 0; i < jugadores.length ; i++) {
+        cadena += ganadores_partida[i]['nombre']+': '+ganadores_partida[i]['total']+'\n\n';
     }
 
-    cadena += '\nInformes en: http://www.metropoligolfcenter.com/';
+    cadena += 'http://www.metropoligolfcenter.com/';
 
     swal({
         title: 'Abriendo cámara',
@@ -257,14 +256,13 @@ function compartirInstagram() {
     
     var jugadores = JSON.parse(localStorage.getItem('jugadores')); 
     var ganadores_partida = JSON.parse(localStorage.getItem('puntajeGanadores'));
-    var cadena = '¡Nosotros jugamos en Metrópoli Golf Center! \n\n------ Resultados: ------\n\n';
+    var cadena = '¡Jugamos en Metrópoli Golf Center! \n\n';
 
-    for(var i = 0; i < jugadores.length ; i++){
-        cadena += '- '+ganadores_partida[i]['nombre']+'\n';
-        cadena += 'Total de tiros: '+ganadores_partida[i]['total']+'\n';
+    for(var i = 0; i < jugadores.length ; i++) {
+        cadena += ganadores_partida[i]['nombre']+': '+ganadores_partida[i]['total']+'\n\n';
     }
 
-    cadena += '\nInformes en: http://www.metropoligolfcenter.com/';
+    cadena += 'http://www.metropoligolfcenter.com/';
     
     swal({
         title: 'Abriendo cámara',
