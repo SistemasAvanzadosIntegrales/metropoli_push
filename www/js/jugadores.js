@@ -36,19 +36,12 @@ function crearRegistro() {
  **/
 function crear_nickname(jugador) {
     
-    alert('Crear nickname');
-    
 	if( $("#nombre"+jugador).val() !== "" && 
         $( "#apellido_paterno"+jugador ).val().length > 1 && 
         $( "#nickname"+jugador ).val() === '' )
     {
-        alert('entrando al if');
         $( "#nickname"+jugador ).val( $("#nombre"+jugador).val().substr(0, 1) + $( "#apellido_paterno"+jugador ).val().substr(0,2));
-        alert('saliendo del if');
 	}
-    
-    alert('fin del nickname');
-    
 }
 
 /**
@@ -59,7 +52,6 @@ function crear_nickname(jugador) {
  * @version:  1
  * @descripcion: 
  **/
-/*
 function iniciarJuego() {
 	
     $('#alerta').hide();
@@ -208,4 +200,3 @@ function iniciarJuego() {
         }
     }
 }
-*/
