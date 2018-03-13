@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        
+        <style>
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          
+            @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+            @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   
+            @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        
+        <!-- JS -->
+        <script type="text/javascript" src="js/push.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/comun.js"></script>
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+    </head>
+    
+    <body>
+        
+         <!-- Header --> 
+        <div class="col-12 no-padding header" id="header">
+            <a onclick="atras()"  class="pull-left ml-3 header_icono mt-4"><i class="fa fa-chevron-circle-left"></i></a> 
+			<div class="col-4 offset-4 ">  
+                <figure> 
+                    <img class="img-responsive mt-3" src="img/logo_metropoli.png" alt="logo_metropoli" width="100%"> 
+                </figure> 
+            </div>
+			
+        </div>
+        
+        <div class="main-wrapper col-12 text-center mt-3">
+            
+            <!-- Logo - titulo-->
+            <!--<div class="input-group input-group-sm mt-3"> 
+                <figure> 
+                    <img class="img-responsive" src="img/logo_metropoli.png" alt="logo_metropoli" width="80%"> 
+                </figure>
+                <label class="col-8 texto_G no-pl no-pr mt-4">Reglas del juego</label>
+            </div>-->
+			
+			<label class="col-12 texto_G">Reglas del juego</label>
+            
+            <div class="col-12 mt-4"> 
+                <p class="mt-3">
+                    1.	No mas de 5 personas por grupo en cualquier hoyo.
+                </p>
+                <p class="mt-3">
+                    2.	5 golpes como máximo por hoyo.
+                </p>
+                <p class="mt-3">
+                    3.	La pelota fuera de límites o en la trampa se sustituye en el punto de salida con una penalización de un golpe.
+                </p>
+                <p class="mt-3">
+                    4.	Pelotas contra el carril y obstáculo se pueden mover el largo de la cabeza del bastión.
+                </p>
+                <p class="mt-3">
+                    5.	Cada jugador debe hacer su primer tiro antes de que cualquier jugador realice su segundo tiro. La pelota mas cercana al hoyo juega primero.
+                </p>
+				<p class="mt-3">
+					6.	Se debe jugar cada hoyo en su orden. No se permite saltar hoyos
+				</p>
+				<p class="mt-3">
+					7.	No se permite realizar swing por encima de la rodilla; Los adultos deben instruir a los niños en el uso adecuado del bastón. 
+				</p>
+				<p class="mt-3">
+					8.	No se permiten alimentos ni bebidas fuera de las áreas designadas para ello. 
+				</p>
+				<p class="mt-3">
+					9.	Antes de jugar verifique el clima por lluvia; no hay reembolsos.
+				</p>
+				<p class="mt-3">
+					10.	El diseño del terreno lo llevará por terreno irregular y puede aumentar el riesgo de lesiones por una caída. Por favor preste atención y observe su camino; y sobre todo ¡diviértase y disfrute!.
+				</p>
+				<p class="mt-3">
+					11.	Los invitamos a cuidar las instalaciones. Por favor no invada las áreas verdes. 
+				</p>
+            </div>
+              
+        </div>
+        
+        <!-- footer -->
+        <div class="col-12 no-padding" id="footer">
+            <label class="col-12 texto_footer  mt-4">Derechos reservados Metropoli Golf Center</label>
+			<label class="col-12 texto_footer" onclick="link('http://metropoligolfcenter.com/');">www.metropoligolfcenter.com</label>
+			<figure> 
+				<img class="img-responsive" src="img/footer.png" alt="logo_metropoli" width="100%"> 
+			</figure>
+        </div>
+ 
+        <!-- "Phantom" cordova.js required for projects that use Cordova plugins. -->
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/init-app.js"></script>
+        <script type="text/javascript" src="xdk/init-dev.js"></script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        
+        <style>
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          
+            @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+            @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   
+            @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        
+        <!-- JS -->
+        <script type="text/javascript" src="js/push.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/comun.js"></script>
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+    </head>
+    
+    <body>
+        <div class="main-wrapper col-12 text-center mt-0 padd_principal">
+            
+            <!-- Logo -->
+			<div class="header2">
+				<div class="col-8 offset-2 mt-3">
+					<figure>
+						<img class="img-responsive" src="img/logo_metropoli.png" alt="logo_metropoli" width="100%"> 
+					</figure>
+				</div>
+			</div>
+			<div>
+				<div class="col-8 offset-2">
+					<input id="codigo" name="codigo" class="input_index form-control centrar" type="text" placeholder="Código" value="" maxlength="4" style="height: 55px !important;">
+				</div>
+                
+				<div class="col-8 offset-2 mt-4">
+					<button style="outline: none; z-index: 9999; cursor: pointer;" class="btn-primary gradiente" onclick="iniciarPartida();">Iniciar Partida</button>
+				</div>
+                
+				<div class="col-12 enlinea">
+					<input type="checkbox" id="avisoprivacidad" name="avisoprivacidad" class="checkbox "> 
+					<span>
+						<a onclick="link('http://metropoligolfcenter.com/index/aviso-privacidad');" style="z-index: 9999; cursor: pointer;" href="#">
+							<ins>Aviso de privacidad</ins>
+						</a>
+					</span>
+				</div>
+				<br>
+                
+				<p class="alert alert-danger mt-4" id="alerta" style="display:none !important;"></p>
+			</div>
+        </div>
+        
+        <!-- footer -->
+        <div class="col-12 no-padding" style="margin-bottom: 30px;" id="footer"> 
+            <label class="col-12 texto_footer">Derechos reservados Metropoli Golf Center</label>
+            <label class="col-12 texto_footer" style="z-index: 9999; cursor: pointer;" onclick="link('http://metropoligolfcenter.com/');">www.metropoligolfcenter.com</label>
+        </div>
+        
+        <!-- "Phantom" cordova.js required for projects that use Cordova plugins. -->
+        <script type="text/javascript" src="cordova.js"></script>
+
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/init-app.js"></script>
+        <script type="text/javascript" src="xdk/init-dev.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+				var clientes = JSON.parse(localStorage.getItem('clientes'));
+				localStorage.setItem("posicion", "1");
+				localStorage.setItem("actual", "1");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        
+        <style>
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          
+            @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+            @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   
+            @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        
+        <!-- JS -->
+        <script type="text/javascript" src="js/push.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/comun.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/html2canvas.js"></script>
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+    </head>
+    
+    <body>
+         <!-- Header --> 
+        <div class="col-12 no-padding header" id="header">
+            <a onclick="atras()"  class="pull-left ml-3 header_icono mt-4"><i class="fa fa-chevron-circle-left"></i></a>
+			<a onclick="ayuda()" class="pull-right mr-3 header_icono mt-4"><i class="fa fa-question-circle"></i></a>
+			
+			<div class="col-4 offset-4 ">  
+                <figure> 
+                    <img class="img-responsive mt-3" src="img/logo_metropoli.png" alt="logo_metropoli" width="100%"> 
+                </figure> 
+            </div>
+        </div>
+        
+        <div class="main-wrapper col-12 text-center mt-4">
+			
+            <div class="col-12 no-padding" id="html2canvas">
+                <div class="input-group">
+                    <label class="col-12 texto_G">Rankings</label>
+                </div>
+                
+                <!-- Primeros Lugares Partida -->
+                <div id="ganadoresPartida" name="ganadoresPartida"></div>
+            </div>
+
+            <!--</table>-->
+            <div class="col-8 offset-2 mt-5">
+            	<button class="btn-primary" style="outline: none;" onclick="continuar();">Continuar<img class="img-responsive ml" src="img/boton_siguiente.png" alt="ball" width="13px"></button>
+			</div>
+        </div>
+        
+        <!-- footer -->
+        <div class="col-12 no-padding" id="footer">
+            <label class="col-12 texto_footer">Derechos reservados Metropoli Golf Center</label>
+            <label class="col-12 texto_footer" onclick="link('http://metropoligolfcenter.com/');">www.metropoligolfcenter.com</label> 
+			<figure> 
+				<img class="img-responsive" src="img/footer.png" alt="logo_metropoli" width="100%"> 
+			</figure>
+        </div>
+
+		<script>
+			localStorage['posicion'] = 3;
+			localStorage['actual']   = 4;
+			obtenerTopJugadores();
+		</script>
+    </body>
+</html>

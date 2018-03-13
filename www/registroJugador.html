@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        
+        <style>
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          
+            @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+            @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   
+            @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+        
+        <!-- JS -->
+        <script type="text/javascript" src="js/push.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/comun.js"></script>
+        <script type="text/javascript" src="js/jugadores.js"></script>
+        <script type="text/javascript" src="js/sweetalert2.all.js"></script>
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+    </head>
+    
+    <body>
+        
+        <!-- Header --> 
+        <div class="col-12 no-padding header" id="header">
+            <a onclick="atras()"  class="pull-left ml-3 header_icono mt-4"><i class="fa fa-chevron-circle-left"></i></a> 
+			<a onclick="ayuda()" class="pull-right mr-3 header_icono mt-4"><i class="fa fa-question-circle"></i></a>  
+			
+			<div class="col-4 offset-4 ">  
+                <figure> 
+                    <img class="img-responsive mt-3" src="img/logo_metropoli.png" alt="logo_metropoli" width="100%"> 
+                </figure> 
+            </div>
+			
+        </div>
+        
+        <div class="main-wrapper2 col-12 text-center mt-3"> 
+            
+            <label class="col-12 texto_G">Favor de registrar sus jugadores</label>
+            
+			
+			<form name="registro" id="registro" >
+				<div id="jugadores" name="jugadores"></div>
+			</form>
+           	
+            <p class="alert alert-danger mt-4" id="alerta" style="display:none !important;"></p>
+			<div class="col-8 offset-2 mt-5">
+            	<button class="btn-primary" style="outline: none;" onclick="iniciarJuego();"><img class="img-responsive mr" src="img/boton_registro.png" alt="ball" width="20px">  Iniciar Juego</button>
+			</div> 
+        </div>
+         
+        <!-- footer -->
+        <div class="col-12 no-padding" id="footer">
+            <label class="col-12 texto_footer">Derechos reservados Metropoli Golf Center</label>
+			<label class="col-12 texto_footer" onclick="link('http://metropoligolfcenter.com/');">www.metropoligolfcenter.com</label>
+			<figure> 
+				<img class="img-responsive" src="img/footer.png" alt="logo_metropoli" width="100%"> 
+			</figure>
+        </div> 
+        
+        <!-- "Phantom" cordova.js required for projects that use Cordova plugins. -->
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/init-app.js"></script>
+        <script type="text/javascript" src="xdk/init-dev.js"></script>
+        <script type="text/javascript"> 
+			localStorage['posicion'] = 1;
+			localStorage['actual'] = 2;
+            crearRegistro();
+        </script>
+    </body>
+</html>
