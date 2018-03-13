@@ -291,12 +291,13 @@ p i {
 }
 
 body {
-    /*background: url(../img/principal.png);*/
     font-family: TitilliumWeb;
     font-weight: normal;
     background-size: 100%;
     font-size: 16px;
     background-color: #fff;
+    float: left;
+    width: 100%;
 }
 
 .main-wrapper {
@@ -489,22 +490,21 @@ select option {
     border-radius: 5px;
 }
 
-
-.texto{
+.texto {
     font-size: 18px;
-    font-weight:bold;
+    font-weight: bold;
     /*text-align: center;*/
 	color: darkseagreen;
 }
 
 .texto_G{
     font-size: 17px;
-    font-weight:bold; 
+    font-weight: bold; 
 }
 
-#footer{
-    position: inherit;
+#footer {
     bottom: 0;
+    float: left;
 }
 
 table{
@@ -649,7 +649,7 @@ i{
     border: 1px  solid #a5a2a2;
     height: 55px;
     margin: auto;
-    padding-top: 17%;
+    padding-top: 13px;
     border-radius: 15px;
 	background: #FCFCFC;
 	width: 55px;

@@ -15,7 +15,6 @@ var onDeviceReady = function() {                        // c
 
 document.addEventListener("deviceready", onDeviceReady, false);
 
-/*
 //Event listener for camera
 document.addEventListener("intel.xdk.camera.picture.add", onSuccess);
 document.addEventListener("intel.xdk.camera.picture.busy", onSuccess);
@@ -39,7 +38,6 @@ function onSuccess(imageURI) {
 /**
  * onSuccess2
  **/
-/*
 function onSuccess2(imageURI) {
     var pic1 = document.getElementById("usr");
     var changebutton = document.getElementById("buttonid");    
@@ -54,7 +52,6 @@ function onSuccess2(imageURI) {
 /**
  * onFail
  **/
-/*
 function onFail(message) {
     console.log("Picture failure: " + message);
 }
@@ -62,7 +59,6 @@ function onFail(message) {
 /**
  * takepicture
  **/
-/*
 function takepicture() {
     navigator.camera.getPicture(onSuccess, onFail, {
         quality: 50, 
@@ -75,7 +71,6 @@ function takepicture() {
 /**
  * Config de cam
  **/
-/*
 function setOptions(srcType) {
     var options = {
         // Some common settings are 20, 50, and 100
@@ -100,7 +95,6 @@ function setOptions(srcType) {
  * @version:  1
  * @descripcion:
  **/
-/*
 function openFilePicker() {
 
     var srcType = Camera.PictureSourceType.SAVEDPHOTOALBUM;
@@ -122,7 +116,6 @@ function openFilePicker() {
  * @version:  1
  * @descripcion: Funcion compartir en Facebook
  **/
-/*
 function compartirFacebook() {
     
     swal({
@@ -186,7 +179,6 @@ function compartirFacebook() {
  * @version:  1
  * @descripcion: Funcion compartir twitter
  **/
-/*
 function compartirTwitter(){
 	
     var jugadores = JSON.parse(localStorage.getItem('jugadores')); 
@@ -261,7 +253,6 @@ function compartirTwitter(){
  * @version:  1
  * @descripcion: Funcion compartir twitter
  **/
-/*
 function compartirInstagram() {
     
     var jugadores = JSON.parse(localStorage.getItem('jugadores')); 
@@ -324,4 +315,3 @@ function compartirInstagram() {
         });
     })
 }
-*/
